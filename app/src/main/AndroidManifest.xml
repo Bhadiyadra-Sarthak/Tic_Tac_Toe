@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.tictactoe">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
     <application
         android:allowBackup="true"
         android:usesCleartextTraffic="true"
@@ -14,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TicTacToe"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5768902856087769~3451838811"/>
         <activity
             android:name=".GameAct"
             android:exported="false" />
